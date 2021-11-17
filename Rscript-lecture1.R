@@ -97,9 +97,3 @@ swiss$agri_dummy = ifelse(test = swiss$Agriculture > 70, yes = 1, no = 0)
 # group_by # summarise # mean
 swiss %>% group_by(agri_dummy) %>% dplyr::summarise(mean(Fertility))
 #
-
-#
-swiss %>% group_by(agri_dummy) %>% dplyr::summarise(median(Fertility), max(Fertility))
-#
-
-cor(swiss$Fertility, swiss$Catholic)
