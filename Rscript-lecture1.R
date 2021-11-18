@@ -30,12 +30,12 @@ setwd(dir = "~/Desktop/")
 
 # base functions #
 exp(2)
-log(10) # natural logarithm
+log(10) # natural logarithms
 log10(10)
 log2(2)
 #
 
-# Example: list of 5 people's age
+# Example: list of age of 5 people
 # symbol `=` or `<-` allows you to create vectors or store values
 data = c(22, 27, 30, 36, 40)
 data <- c(22, 27, 30, 36, 40)
@@ -97,3 +97,4 @@ swiss$agri_dummy = ifelse(test = swiss$Agriculture > 70, yes = 1, no = 0)
 # group_by # summarise # mean
 swiss %>% group_by(agri_dummy) %>% dplyr::summarise(mean(Fertility), min(Agriculture))
 #
+
